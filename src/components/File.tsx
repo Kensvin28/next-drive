@@ -17,7 +17,9 @@ const File = ({data}: {data: Data}) => {
     // hide context menu when clicking outside
     useEffect(() => {
         const handleBodyClick = (e: MouseEvent) => {
-            const isContextMenuClicked = !(e.target instanceof Element && e.target.closest('.menu'));
+            const isContextMenuClicked = !!(
+              e.target instanceof Element && e.target.closest(".menu")
+            );
             if (!isContextMenuClicked) {
                 setShowContextMenu(false);
             }
@@ -53,6 +55,7 @@ const File = ({data}: {data: Data}) => {
             <div
               onClick={(event: React.MouseEvent): void => {
                 event.stopPropagation();
+                event.preventDefault();
                 setShowContextMenu(!showContextMenu);
               }}
             >
