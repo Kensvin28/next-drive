@@ -1,5 +1,7 @@
 # Next Drive
 Simple Google Drive clone with Next.js and Firestore
+![image](https://github.com/Kensvin28/next-drive/assets/63847755/a9c6d35a-088c-47a3-9a0d-d2a365a76f73)
+Adapted from [Free Code Camp](https://youtu.be/gwOVynGnDZA?si=48y6FSYRDGVtpZ_6)
 
 # Create T3 App
 
